@@ -1,6 +1,5 @@
 // Find the length and value of the longest substring without repeating characters using the sliding window technique.
 
-
 function longestString(str){
     var m ={};
     let l= 0;
@@ -14,13 +13,19 @@ function longestString(str){
                 s = str.slice(l,r)
             }
             while(l < r){
-                m[str.charAt(l)] = 0;
-                l++;
+                if(str.charAt(l) == str.charAt(r)){
+                    m[str.charAt(l)] = 0;
+                    l++
+                    break
+                }else{
+                    m[str.charAt(l)] = 0;
+                    l++;
+                }
+                 
             }
             m[str.charAt(r)] = 1;
         }
     }
     return s;
-
 }
-console.log(longestString("asabcfeerrgads"));
+console.log(longestString("asbacfergaads"));

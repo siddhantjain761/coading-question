@@ -30,4 +30,4 @@ class Soluation{
     }
 }
 var myInstance = new Soluation();
-console.log(myInstance.targetSum([1,3,6,3,5,7],16));
+console.log(myInstance.targetSum([1,3,6,33,5,7],16));
