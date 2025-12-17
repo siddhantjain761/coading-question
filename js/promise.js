@@ -11,10 +11,8 @@ const apiResponse =
         resolve(r)
     }else{
         reject("api fails")
-    }
-     
+    }     
 })
-
 
 apiResponse
 .then((result)=>{
@@ -23,3 +21,5 @@ apiResponse
 .catch((err)=>{
     console.log(err)
 })
+
+arr=[30,45,60,50,30,2,25]

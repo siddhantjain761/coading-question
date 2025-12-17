@@ -14,8 +14,8 @@ class Solution{
             this.swapCharacter(left,i);
         }
         return this.perm;
-    }
-    swapCharacter(left,i){
+    }   
+    swapCharacter(left,i){  
         let charArray = this.str.split('');
         let tmp = charArray[left];
         charArray[left] = charArray[i];

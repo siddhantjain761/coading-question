@@ -35,5 +35,5 @@ function maxheap(heap){
  
 }
 var arr = [6,7,3,1,2]
-maxheap(arr)
-//console.log("hello",tap_water(arr))
+//maxheap(arr)
+console.log("hello",tap_water(arr))
