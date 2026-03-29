@@ -35,5 +35,7 @@ const memoizedAdd = memoize(add);
 const memoizedmulti = memoize(calc);
 
 console.log(memoizedAdd(1,2))
+console.log(memoizedAdd(2,2))
 console.log(memoizedAdd(1,2))
 console.log(memoizedmulti(1,2))
+console.log(memoizedAdd(1,2))

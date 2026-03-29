@@ -12,7 +12,7 @@ class Solution {
     reverseWords(s) {
         // code here
         console.log(s.split('.'));
-        let b = s.split('.').filter(Boolean)
+        let b = s.split('.').filter(Boolean);
         console.log(this.reverseArray(b).join("."));
 
         

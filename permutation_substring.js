@@ -1,6 +1,4 @@
 //https://www.geeksforgeeks.org/dsa/check-if-permutation-of-pattern-is-substring/
-
-
 function checkPermutation(freq){
     for(let i=0;i<=freq.length -1 ; i++){
         if(freq[i]!= 0){
@@ -30,8 +28,6 @@ function search (txt,pat){
     }
     }
     return false
-
-
 }
 txt ="adcdee"
 pat = "ede"

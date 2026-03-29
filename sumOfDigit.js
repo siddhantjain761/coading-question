@@ -3,8 +3,9 @@ function sumOfDigit(n){
     let num = parseInt(n)
     while(num > 0){
         den = num%10 ;
-        num = Math.floor(num/10)
         sum = sum + den;
+        num = Math.floor(num/10)
+         
     }
     return sum;
 }

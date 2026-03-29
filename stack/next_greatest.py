@@ -2,6 +2,7 @@
 # https://www.youtube.com/watch?v=e7XQLtOQM3I
 def nextGreatest(arr,result):
     stack =[]
+    print(len(stack))
     for i in range(len(arr)-1,-1,-1):
         while(len(stack)!=0):
             if(stack[-1]>arr[i]):

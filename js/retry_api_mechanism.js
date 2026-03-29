@@ -17,7 +17,11 @@ const retry = (apiMock,retries,delay)=>{
    return new Promise((resolve,reject)=>{
     apiMock
     .then((result)=>{
-        resolve(result)
+        if(result.name == 'jason data'){
+            resolve(result)
+        }else{
+           throw new Error("retry"); 
+        }
     })
     .catch((err)=>{
         retriecount +=1
@@ -26,7 +30,11 @@ const retry = (apiMock,retries,delay)=>{
             setTimeout((resolve,reject)=>{
                 retry(apiMock,retries,delay)
                 .then(result=>{
-                  resolve(result)
+                    if (result.name == 'jason data') {
+                        resolve(result)
+                    } else {
+                        throw new Error("retry");
+                    }
                 })
                .catch(err=>{
                   reject(err)

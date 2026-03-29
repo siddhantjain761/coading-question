@@ -1,4 +1,5 @@
 // Find the length and value of the longest substring without repeating characters using the sliding window technique.
+//ASCII value (a-z) => (97-122) , (A-Z) =>(65-90)
 
 function longestString(str){
     var m ={};

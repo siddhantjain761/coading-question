@@ -24,5 +24,5 @@ class Solution{
 }
 var temp = [];
 var left = 0;
-const myIstance = new Solution([1,2,3]);
+const myIstance = new Solution([1,2,6,3]);
 console.log(myIstance.subSetarr(temp,left));
